@@ -1,0 +1,11 @@
+#! /bin/sh
+
+/opt/app/zookeeper/bin/./zkServer.sh start
+
+rm -rf /opt/app/hadoop/logs/*
+mr-jobhistory-daemon.sh  start historyserver
+#/opt/app/mysql/support-files/./mysql.server start
+nohup hive --service metastore > /dev/null &
+nohup hive --service hiveserver2 > /dev/null &
+
+

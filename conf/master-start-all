@@ -1,0 +1,22 @@
+#! /bin/sh                                                        
+
+#/opt/app/nexus/nexus-2.14.4-03/bin/./nexus start
+/opt/app/zookeeper/bin/./zkServer.sh start
+rm -rf /opt/app/hadoop/logs/*
+#hdfs journalnode -format
+hadoop-daemons.sh start journalnode
+#hdfs namenode -format
+#hdfs namenode -initializeSharedEdits
+#hdfs zkfc -formatZK
+hadoop-daemons.sh start zkfc
+hadoop-daemon.sh start namenode
+#到备用节点执行bootstrapStandby 并启动namenode 才会建立集群
+hadoop-daemons.sh start datanode
+start-yarn.sh
+mr-jobhistory-daemon.sh  start historyserver
+#/opt/app/mysql/support-files/./mysql.server start
+#nohup hive --service hiveserver2 &
+#nohup hive --service metastore &
+start-master.sh
+start-slaves.sh
+nohup hive --service hiveserver2 > /dev/null &
