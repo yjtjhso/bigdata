@@ -1,0 +1,16 @@
+#! /bin/sh
+
+#scp -r /opt/app/hadoop/etc/hadoop admin@test02:/opt/app/hadoop/etc
+#scp -r /opt/app/hadoop/etc/hadoop admin@test03:/opt/app/hadoop/etc
+
+scp -r /opt/app/hive/conf admin@test02:/opt/app/hive
+scp -r /opt/app/hive/conf admin@test03:/opt/app/hive
+
+scp -r /opt/app/spark/conf admin@test02:/opt/app/spark
+scp -r /opt/app/spark/conf admin@test03:/opt/app/spark
+
+scp -r /opt/app/sqoop/conf admin@test02:/opt/app/sqoop
+scp -r /opt/app/sqoop/conf admin@test03:/opt/app/sqoop
+
+scp -r /opt/app/zookeeper/conf admin@test02:/opt/app/zookeeper
+scp -r /opt/app/zookeeper/conf admin@test03:/opt/app/zookeeper
