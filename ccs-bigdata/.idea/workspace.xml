@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7a8f293-83c7-471d-8daa-4958c5da7650" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/lycheepay/ccs/dao/TradeRecordDao.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/lycheepay/ccs/dao/TradeRecordDao.scala" />
-    </list>
+    <list default="true" id="e7a8f293-83c7-471d-8daa-4958c5da7650" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/lycheepay/ccs/dao/TradeRecordDao.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="364">
-              <caret line="16" column="103" lean-forward="false" selection-start-line="16" selection-start-column="103" selection-end-line="16" selection-end-column="103" />
+              <caret line="16" column="105" lean-forward="false" selection-start-line="16" selection-start-column="105" selection-end-line="16" selection-end-column="105" />
               <folding />
             </state>
           </provider>
@@ -1386,7 +1384,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/lycheepay/ccs/dao/TradeRecordDao.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
-          <caret line="16" column="103" lean-forward="false" selection-start-line="16" selection-start-column="103" selection-end-line="16" selection-end-column="103" />
+          <caret line="16" column="105" lean-forward="false" selection-start-line="16" selection-start-column="105" selection-end-line="16" selection-end-column="105" />
           <folding />
         </state>
       </provider>
