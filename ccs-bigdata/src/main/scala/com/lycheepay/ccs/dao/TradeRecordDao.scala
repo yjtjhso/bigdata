@@ -14,6 +14,6 @@ object TradeRecordDao {
     dataFrame.foreach((row) => {
       println(row.get(0))
     }:Unit)
-    FileSystem.get(SparkService.get().spark.sparkContext.hadoopConfiguration).deleteOnExit(new Path("tt"))
+    FileSystem.get(SparkService.get().spark.sparkContext.hadoopConfiguration).deleteOnExit(new Path("tttt"))
   }
 }
